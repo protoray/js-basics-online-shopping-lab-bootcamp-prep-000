@@ -40,8 +40,8 @@ function viewCart()
 
       for(var i = 0; i <= cart.length+1; i++)
       {
-        itemArr.push(Object.getOwnPropertyNames(cart[i+1])[i+1]);
-        itemValue.push(Object.getOwnPropertyDescriptor(cart[i+1], itemArr[i+1]).value);
+        itemArr.push(Object.getOwnPropertyNames(cart[i])[i]);
+        itemValue.push(Object.getOwnPropertyDescriptor(cart[i], itemArr[i]).value);
       }
       console.log(`In your cart, you have ${itemArr[0]} at $${itemValue[0]} and ${itemArr[1]} at $${itemValue[0]}.`);
     }
