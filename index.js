@@ -38,7 +38,7 @@ function viewCart()
     else if(cart.length === 2)
     {
 
-      for(var i = 0; i <= cart.length+1; i++)
+      for(var i = 0; i <= cart.length; i++)
       {
         itemArr.push(Object.getOwnPropertyNames(cart[i])[i]);
        itemValue.push(Object.getOwnPropertyDescriptor(cart[i], itemArr[i]).value);
